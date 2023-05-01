@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Popup</title>
+  <link rel="stylesheet" href="/css/bulma.min.css">
+  <link rel="stylesheet" href="/css/popup.css">
+  <link rel="stylesheet" href="/css/select2.min.css"/>
+</head>
+<body>
+<div id="container">
+  <div id="messsage_container"></div>
+  <div class="form">
+    <div class="photo">
+      <img src="/img/noimage.jpg" alt="">
+    </div>
+
+    <div class="field">
+      <label class="label">Имя</label>
+      <div class="control">
+        <input name="name" class="input name" type="text" placeholder="Имя кандидата">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Фамилия</label>
+      <div class="control">
+        <input name="last_name" class="input last_name" type="text" placeholder="Фамилия кандидата">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Портфолио</label>
+      <div class="control">
+        <input name="portfolio" class="input portfolio" type="text" placeholder="Ссылка на портфолио">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Контакты</label>
+      <div class="control">
+        <input name="contacts" class="input contacts" type="text" placeholder="Контакты">
+      </div>
+    </div>
+
+    <div>
+      <label class="label">Вакансия</label>
+      <select multiple id="vac"></select>
+    </div>
+
+    <div class="popup_footer">
+      <button class="getData button is-info is-small">Загрузить данные</button>
+      <button class="submit button is-primary is-small send_data">Отправить данные</button>
+    </div>
+  </div>
+</div>
+<script src="/js/jquery-3.5.0.min.js"></script>
+<script src="/js/constants.js"></script>
+<script src="/js/notifications.js"></script>
+<script src="/js/popup.js"></script>
+<script src="/js/select2.min.js"></script>
+</body>
+</html>
